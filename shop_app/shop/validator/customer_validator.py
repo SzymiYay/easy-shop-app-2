@@ -1,4 +1,4 @@
-from ...logger import MyLogger
+from shop_app.logger.model import MyLogger
 
 import logging
 import re

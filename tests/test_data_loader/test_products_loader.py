@@ -20,15 +20,15 @@ class TestProductsLoader(unittest.TestCase):
             Product(name='Potato', amount=1500, price=Decimal('3'), category=Category.GROCERIES),
             Product(name='Harry Potter', amount=3, price=Decimal('50'), category=Category.BOOKS)
         ]
-        result = get_products_data('tests/data/products.txt')[0]
+        result = get_products_data('tests/data/products.txt')
 
-        self.assertEqual(expected_result, get_products_data('tests/data/products.txt')[0])
+        self.assertEqual(expected_result, result)
 
     def test_get_products_data_invalid_path(self):
         self.assertRaises(FileNotFoundError, get_products_data, 'tests/data/invalid_path.txt')
 
     def test_get_products_data_empty_file(self):
-        self.assertEqual([], get_products_data('tests/data/empty.txt')[0])
+        self.assertEqual([], get_products_data('tests/data/empty.txt'))
 
     # def test_get_products_data_invalid_data_index_error(self):
     #     with open('tests/data/invalid_data.txt', 'w') as f:

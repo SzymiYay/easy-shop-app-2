@@ -20,13 +20,13 @@ class TestCustomersLoader(unittest.TestCase):
         expected_result = [Customer(name='Jan', surname='Kowal', age=20, money=Decimal('2000'), preferences='124'),
                            Customer(name='Adam', surname='Nowak', age=40, money=Decimal('5000'), preferences='4253'),
                            Customer(name='Joanna', surname='Drwal', age=23, money=Decimal('1500'), preferences='21')]
-        self.assertEqual(expected_result, get_customers_data('tests/data/customers.txt')[0])
+        self.assertEqual(expected_result, get_customers_data('tests/data/customers.txt'))
 
     def test_get_customers_data_invalid_path(self):
         self.assertRaises(FileNotFoundError, get_customers_data, 'tests/data/invalid_path.txt')
 
     def test_get_customers_data_empty_file(self):
-        self.assertEqual([], get_customers_data('tests/data/empty.txt')[0])
+        self.assertEqual([], get_customers_data('tests/data/empty.txt'))
 
     def test_get_customers_data_invalid_data_index_error(self):
         with open('tests/data/invalid_data.txt', 'w') as f:

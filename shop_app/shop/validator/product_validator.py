@@ -1,5 +1,5 @@
 from ..product.category import Category
-from ...logger import MyLogger
+from shop_app.logger.model import MyLogger
 
 import re
 
