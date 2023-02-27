@@ -1,0 +1,3 @@
+Washing Machine;4;400;ELECTRONICS
+Potato;1500;3;GROCERIES
+Harry Potter;3;50;BOOKS

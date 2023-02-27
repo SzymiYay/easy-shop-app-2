@@ -1,0 +1,7 @@
+JAN;Kowal;20;2000;124
+Adam;Nowak;40;5000;4253
+Joanna;Drwal;23;1500;21
+Dominik;Musial;70;800;234
+Barbara;Canert;10;3400;4152
+Wojciech;Polanski;15;560;1
+Milosz;Wojcik;34;2200;23

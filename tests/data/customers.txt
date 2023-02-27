@@ -1,0 +1,3 @@
+Jan;Kowal;20;2000;124
+Adam;Nowak;40;5000;4253
+Joanna;Drwal;23;1500;21
